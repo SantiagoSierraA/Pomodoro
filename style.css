@@ -8,14 +8,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #bb4949;
     color: #fff;
-    font-weight: 300px;
+    transition: background-color 0.5s ease;
 }
 
 main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -87,10 +86,10 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom: 8px;
+    letter-spacing: 1px;
 }
 
 .options button{
-    font-weight: bold;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     font-size: 16px;
@@ -99,6 +98,7 @@ main{
     padding: 8px 20px;
     height: 100%;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .options button:first-child {
@@ -113,6 +113,11 @@ main{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.options button.active{
+    background-color: rgb(0,0,0,0.12);
+    font-weight: bold;
+}
+
 .timer{
     flex: 1;
     display: flex;
@@ -122,6 +127,7 @@ main{
 
 #time{
     font-size: 8rem;
+    transition: all 0.5s ease;
 }
 
 .controls{
@@ -138,6 +144,7 @@ main{
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: all 0.5s ease;
 }  
 
 
@@ -159,16 +166,31 @@ main{
     max-width: 500px;
 }
 
+#pom-counter{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#pom-counter:hover{
+    opacity: 0.8;
+}
+
+#message{
+    margin: 5px;
+    font-size: 1.1em;
+    transition: all 0.5 ease;
+}
+
 .tasks-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 8px;
     width: 90%;
     height: 100%;
     max-width: 500px;
-    max-height: 50px;
-    padding: 10px;
+    max-height: 100px;
+    padding: 10px 0px 10px 0px;
     justify-content: space-between;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
 }
@@ -181,9 +203,55 @@ main{
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    margin-top: 3px;
 }
 
+.tasks-text{
+    font-size: 1.2em;;
+}
 .three-dots {
     width: 15px;
     height: 15px;
+}
+
+.tasks-list {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    gap: 8px;
+}
+
+.add-icon{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 3px;
+}
+
+#add-task:hover {
+    opacity: 0.85;
+    background-color: rgba(0,0,0,0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
 }

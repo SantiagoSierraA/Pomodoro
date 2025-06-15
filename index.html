@@ -25,7 +25,7 @@
     <main>
         <div class="container">
             <div class="options">
-                <button id="pomodoro">Pomodoro</button>
+                <button class="active" id="pomodoro">Pomodoro</button>
                 <button id="short-break">Short Break</button>
                 <button id="long-break">Long Break</button>
             </div>
@@ -38,16 +38,22 @@
             </div>
         </div>
         <div class="counter-container">
-                <span>#1</span>
-                <span>Time to focus!</span>
+                <p id="pom-counter">#1</p>
+                <p id="message">Time to focus!</p>
         </div>
         <div class="tasks-container">
-            <h2>Tasks</h2>
+            <h2 class="tasks-text">Tasks</h2>
             <button id="tasks-settings">
                 <img src="https://pomofocus.io/icons/threedots-white.png" class="three-dots">
             </button>
         </div>
+        <div class="tasks-list">
+            <button id="add-task">
+                <img src="https://pomofocus.io/icons/plus-circle-white.png" class="add-icon">
+                Add task</button>
+        </div>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
