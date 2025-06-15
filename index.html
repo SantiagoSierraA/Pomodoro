@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro</title>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" 
+    href="https://pngfre.com/wp-content/uploads/tomato-63.png"
+    >
 </head>
 <body>
-    
+    <header class ="header">
+        <nav class="nav">
+            <h1 class="tittle">
+                <img src="https://pngfre.com/wp-content/uploads/tomato-63.png" class="logo">
+                Pomodoro Timer
+            </h1>
+            <button id="settings">
+                <img src="https://pomofocus.io/icons/config-white.png" class="settings-icon">
+                Settings
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="options">
+                <button id="pomodoro">Pomodoro</button>
+                <button id="short-break">Short Break</button>
+                <button id="long-break">Long Break</button>
+            </div>
+            <div class="timer">
+                <h2 id="time">30:00</h2>
+            </div>
+            <div class="controls">
+                <button id="start">START</button>
+                <button id="pause">Pause</button>
+            </div>
+        </div>
+        <div class="counter-container">
+                <span>#1</span>
+                <span>Time to focus!</span>
+        </div>
+        <div class="tasks-container">
+            <h2>Tasks</h2>
+            <button id="tasks-settings">
+                <img src="https://pomofocus.io/icons/threedots-white.png" class="three-dots">
+            </button>
+        </div>
+    </main>
+
 </body>
 </html>
